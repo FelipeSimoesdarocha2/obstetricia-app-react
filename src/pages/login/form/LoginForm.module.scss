@@ -1,0 +1,134 @@
+@import "../../../@core/scss/variables";
+@import "../../../@core/scss/mixins";
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem !important;
+  }
+
+  label {
+    font-weight: 500;
+  }
+  
+  .containerInput {
+    width: 300px;
+    text-align: center;
+  }
+
+  .containerRememberMe {
+    margin-top: 16px;
+    width: 250px;
+    align-content: flex-start;
+  }
+  .RememberAndPassword {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: -webkit-center;
+  }
+  .containerForgotPassword {
+    text-align: left;
+    margin-top: 16px;
+    width: 250px;
+
+    .btnFogotPassword {
+      cursor: pointer;
+      border: none;
+      border-bottom: 1px solid $primary-1;
+      background-color: transparent;
+      color: $primary-1;
+      font-size: 14px;
+      padding: 0;
+
+      .iconShowForgotPassword {
+        font-size: 14px;
+        margin-bottom: -4px;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  .containerButton {
+    text-align: center;
+    width: 250px;
+    margin-bottom: 10px;
+
+    button {
+      height: 1rem;
+      font-size: 15px;
+    }
+  }
+  .divider {
+    margin-top: 14px;
+    border: 1px solid #e3e3e3;
+    width: 30%;
+  }
+
+  .divide {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    > span {
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 400%;
+        height: 1px;
+        background: $primary;
+        right: 100%;
+        margin-right: 15px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 1px;
+        background: $primary;
+        width: 400%;
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@include xl {
+  .loginContainer {
+    h1 {
+      font-size: 2vw;
+    }
+  }
+}
+
+@include md {
+  .loginContainer {
+    h1 {
+      font-size: 3.5vw;
+    }
+  }
+}
+
+@include sm {
+  .loginContainer {
+    h1 {
+      font-size: 5.5vw;
+    }
+  }
+}

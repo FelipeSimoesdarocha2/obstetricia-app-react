@@ -1,0 +1,122 @@
+@import "../../@core/scss/mixins";
+
+.container {
+  display: flex;
+  
+  padding: 10px;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius;
+
+    .logo {
+      max-width: 412px;
+    }
+  }
+
+  .formContainer {
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: $primary;
+  
+    .info {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 2rem;
+  
+      h2 {
+        font-size: 2rem !important;
+        font-weight: 400;
+        margin: 0;
+      }
+  
+      h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+    }
+  }
+
+  .containerButtons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    button {
+      height: 1rem;
+      font-size: 15px;
+      width: 200px;
+    }
+
+    button:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+}
+
+@include xl {
+  .container {
+    .image {
+      background-image: url("./images/Login_Wallpaper.png");
+      background-repeat: no-repeat;
+
+      width: 50vw;
+      flex: 0 0 60%;
+
+      .logo {
+        width: 40vw;
+      }
+
+      .logoShort {
+        display: none;
+      }
+    }
+  }
+}
+
+@include md {
+  .container {
+    background-image: url("./images/Login_Wallpaper.png");
+    background-repeat: no-repeat;
+    display: block;
+    overflow: auto;
+    padding: 40px;
+
+    .image {
+      height: 200px;
+      padding: 20px;
+
+      .logo {
+        display: none;
+      }
+
+      .logoShort {
+        display: inline-block;
+      }
+    }
+
+    .formContainer {
+      overflow: hidden !important;
+    }
+  }
+}

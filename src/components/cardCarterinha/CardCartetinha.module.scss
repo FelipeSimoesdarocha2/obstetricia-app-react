@@ -1,0 +1,344 @@
+@import "../../@core/scss/variables";
+@import "../../@core/scss/mixins";
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px 24px;
+  min-height: 100vh;
+  overflow: auto;
+
+  .containerHistoricoLine {
+    // border: 1px solid #000;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    .lineHeader{
+      height: 2px;
+      background-color: #1A535C;
+    }
+    .lineHeaderAfter{
+      height: 2px;
+          background-color: rgb(209, 213, 219);
+    }
+
+    .wrapperContainerChecked{
+
+
+      .headerChecked{
+
+        cursor: pointer;
+        
+
+        .containerChecked{
+          height: 35px;
+          width: 35px;
+          border-radius: 35px;
+          background-color: #1A535C;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+
+        .finalContainer{
+          height: 28px;
+          width: 28px;
+          border-radius: 35px;
+          justify-content: center;
+          border: 4px solid #9CA3AF;
+          align-items: center;
+          background-color: white;
+          display: flex;
+        }
+        .ballTodayFinal{
+          height: 10px;
+          width: 10px;
+          border-radius: 10px;
+          background-color: #D1D5DB;
+        }
+
+
+      }
+
+      .historicoTextContainerTop{
+        margin-top: -50px;
+      }
+
+
+
+      .historicoTextContainer{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+        .historicoText{
+          font-size: 16px;
+          color: #707070;
+          text-align: center;
+
+          .bold {
+            color: #1A535C;
+
+          }
+        }
+      }
+
+
+   
+    .containerToday{
+      height: 28px;
+      width: 28px;
+      border-radius: 35px;
+      justify-content: center;
+      border: 4px solid #1A535C;
+      align-items: center;
+      background-color: white;
+      display: flex;
+    }
+    .ballToday{
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      background-color: #1A535C;
+    }
+   
+  }
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .cardCarteirinha {
+    overflow: hidden;
+  }
+
+  .titleSection {
+    font-size: 17px;
+    font-weight: bold;
+    color: #27272A;
+
+  }
+  .spacerHeader {
+    height: 40px;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+    @include borderBottomLinear;
+  }
+  .textArea {
+    border-radius: $border-radius-textarea;
+  }
+
+  .rowInput {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+  .rowCheckbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .rowCheckboxHistorico {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .width30{
+    width: 30%;
+    margin: 10px;
+  }
+  .width60{
+    width: 60%;
+  }
+  .cardBody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+  
+      &.spaceBetween {
+        justify-content: space-between;
+      }
+    }
+  }
+  .btnAction {
+    display: block;
+    width: auto;
+    padding: 10px 30px;
+    font-size: 12px;
+    height: auto;
+    margin: 10px;
+  
+    &.secondary {
+      background-color: white;
+    }
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    border: 1px solid #FADDEE;
+    padding: 10px 0 0 0;
+
+    .containerIcon{ 
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .text {
+        font-size: 12px;
+        font-weight: bold;
+        color: #484C52;
+        text-transform: uppercase;
+      }
+      .icon {
+        height: 20px;
+        width: 22px;
+        object-fit: contain;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .spacer {
+    height: 16px;
+  }
+  .containerLoading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .container {
+    border: 1px solid #FADDEE;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px;
+    .icon {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+      margin-left: auto;
+      cursor: pointer;
+    }
+    .imageContainer {
+      height: 60px;
+      width:  60px;
+      object-fit: contain;
+    }
+    .containerText {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      .title {
+        font-size: 17px;
+        font-weight: bold;
+        color: #1A535C;
+      }
+      .subTitle {
+        font-size: 14;
+        font-weight: 400;
+        color: #1A535C;
+      }
+      .desc {
+        font-size: 13;
+        font-weight: 300;
+        color: #707070;
+      }
+    }
+  }
+
+   .headerConsulta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+    border-radius: 16px;
+    
+    .containerBack{
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      height: fit-content;
+      .containerIcon {
+        height: 24px;
+        width: 24px;
+        border-radius: 12px;
+        background-color: #D1DDDE;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+      .text {
+        font-size: 10px;
+        color: #1A535C;
+      }
+
+    }
+    .containerMid {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      .imageContainer {
+        height: 60px;
+        width:  60px;
+        object-fit: contain;
+      }
+      .containerText {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        .title {
+          font-size: 17px;
+          font-weight: bold;
+          color: #1A535C;
+        }
+        .subTitle {
+          font-size: 14;
+          font-weight: 400;
+          color: #1A535C;
+        }
+        .desc {
+          font-size: 13;
+          font-weight: 300;
+          color: #707070;
+        }
+      }
+    }
+  }
+}
+

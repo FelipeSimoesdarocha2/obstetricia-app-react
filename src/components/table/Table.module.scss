@@ -1,0 +1,29 @@
+@import "../../@core/scss/variables";
+
+.container {
+  overflow-x: auto;
+  padding: 0 20px;
+
+  .table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 14px;
+
+    tr {
+      border-bottom: 1px solid $secondary;
+
+      td, th {
+        padding: 18px;
+      }
+    }
+
+    .noRegistries {
+      text-align: center;
+    }
+
+    .trBody {
+      cursor: pointer;
+    }
+  }
+}

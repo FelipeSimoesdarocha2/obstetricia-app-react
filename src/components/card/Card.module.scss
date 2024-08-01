@@ -1,0 +1,33 @@
+@import "../../@core/scss/variables";
+@import "../../@core/scss/mixins";
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px 24px;
+  min-height: calc(100% - 2rem);
+  overflow: auto;
+
+  .header {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    @include borderBottomLinear;
+
+    strong {
+      text-transform: uppercase !important;
+    }
+
+    div {
+      color: $primary;
+    }
+  }
+}
+
+@include sm {
+  .card {
+    width: 100%;
+  }
+}

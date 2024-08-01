@@ -1,0 +1,81 @@
+{
+  "name": "obstetricia-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.6.0",
+    "@react-oauth/google": "^0.2.6",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/file-saver": "^2.0.5",
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^16.11.26",
+    "@types/prop-types": "^15.7.4",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "@types/react-dropzone": "^5.1.0",
+    "@types/styled-components": "^5.1.32",
+    "animate.css": "^4.1.1",
+    "antd": "^5.10.0",
+    "axios": "^1.5.1",
+    "chart.js": "^4.4.0",
+    "date-fns": "^2.29.3",
+    "file-saver": "^2.0.5",
+    "formik": "2.4.1",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "query-string": "^8.1.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-css-loaders": "^0.0.6",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^14.2.2",
+    "react-google-login": "^5.2.2",
+    "react-icons": "^4.11.0",
+    "react-input-mask": "^2.0.4",
+    "react-qr-code": "^2.0.12",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "react-to-print": "^2.14.13",
+    "recharts": "^2.1.9",
+    "sass": "^1.49.9",
+    "styled-components": "4.3.1",
+    "typescript": "^4.6.2",
+    "universal-cookie": "^4.0.4",
+    "use-debounce": "^8.0.4",
+    "web-vitals": "^2.1.4",
+    "yup": "0.32.11"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.11",
+    "@types/react-input-mask": "^3.0.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "enzyme": "^3.11.0",
+    "json-server": "^0.17.0",
+    "prettier": "^2.5.1"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

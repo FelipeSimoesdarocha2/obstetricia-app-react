@@ -1,0 +1,81 @@
+@import "../../@core/scss/mixins";
+
+.loginContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .loginImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius;
+
+    .logo {
+      max-width: 412px;
+    }
+  }
+
+  .loginFormContainer,
+  .forgotPasswordContainer {
+    width: 100%;
+    overflow-x: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include xl {
+  .loginContainer {
+    .loginImage {
+      background-image: url("./images/Login_Wallpaper.png");
+      background-repeat: no-repeat;
+
+      width: 50vw;
+      flex: 0 0 60%;
+
+      .logo {
+        width: 40vw;
+      }
+
+      .logoShort {
+        display: none;
+      }
+    }
+  }
+}
+
+@include md {
+  .loginContainer {
+    background-image: url("./images/Login_Wallpaper.png");
+    background-repeat: no-repeat;
+    display: block;
+    overflow: auto;
+    padding: 40px;
+
+    .loginImage {
+      height: 200px;
+      padding: 20px;
+
+      .logo {
+        display: none;
+      }
+
+      .logoShort {
+        display: inline-block;
+      }
+    }
+
+    .loginFormContainer,
+    .forgotPasswordContainer {
+      overflow: hidden !important;
+    }
+  }
+}

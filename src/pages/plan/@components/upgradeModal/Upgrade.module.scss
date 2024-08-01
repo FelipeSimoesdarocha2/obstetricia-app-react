@@ -1,0 +1,76 @@
+.statusFalse {
+    padding: 3px;
+    height: 19px;
+    color: #48757d;
+    background: #ffffff;
+    opacity: 0.5;
+    border-radius: 18px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: no-drop;
+}
+
+.statusTrue {
+    padding: 0.8rem !important;
+    height: 19px;
+    color: #48757d !important;
+    background: #ffffff !important;
+    border-radius: 18px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.statusTrue:hover {
+    opacity: 0.9;
+}
+
+.fontCard {
+    font-size: 15px;
+    font-weight: 300 !important;
+    line-height: 22px;
+    margin: 0;
+}
+
+.setValue {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        opacity: 0.5;
+        margin: 0;
+    }
+}
+
+.title {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.label {
+    font-family: "Sarabun";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.labelValue {
+    font-family: "Sarabun";
+    font-weight: 700;
+    font-size: 15px;
+    color: #1a535c;
+    margin: 0;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+}

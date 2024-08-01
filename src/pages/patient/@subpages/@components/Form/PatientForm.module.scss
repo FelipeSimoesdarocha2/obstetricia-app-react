@@ -1,0 +1,49 @@
+@import "../../../../../@core/scss/mixins";
+
+.container {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    @include borderBottomLinear;
+  }
+}
+
+.cardBody {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &.spaceBetween {
+      justify-content: space-between;
+    }
+  }
+}
+
+.noPaddingLeft {
+  padding-left: 0;
+}
+
+.noPaddingRight {
+  padding-right: 0;
+}
+
+.btnAction {
+  display: block;
+  width: auto;
+  padding: 10px 30px;
+  font-size: 12px;
+  height: auto;
+  margin: 10px;
+
+  &.secondary {
+    background-color: white;
+  }
+}

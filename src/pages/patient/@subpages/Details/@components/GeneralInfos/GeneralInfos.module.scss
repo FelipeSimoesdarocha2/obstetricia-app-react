@@ -1,0 +1,84 @@
+@import "../../../../../../@core/scss/variables";
+
+.container {
+  text-align: center;
+
+  .patientImage {
+    width: 80px;
+    height: 80px;
+    margin: 24px;
+  }
+
+  .infos {
+    line-height: 10px;
+    font-size: 14px;
+
+    strong {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    .status {
+      color: $primary;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+  }
+  .active {
+    &::before {
+      width: 3px;
+      height: 15px;
+      content: "";
+      margin-left: -28px;
+      margin-top: -6px;
+      background-color: $primary;
+      position: absolute;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+  
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+
+    button {
+      justify-content: space-between;
+      padding: 10px;
+      background-color: white;
+      max-width: 250px;
+    }
+  }
+  .containerButtons {
+    padding: 0 20px;
+  }
+
+  .buttonPaci {
+    height: 40px;
+    background-color: #EAF2F4;
+    border-radius: 35px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .text{
+      color: #1A535C;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+ 
+  .icon {
+   margin-right: 20px;
+  }
+ 
+}

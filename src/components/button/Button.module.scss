@@ -1,0 +1,72 @@
+@import "../../@core/scss/variables";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  cursor: pointer;
+
+  .buttonName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 15px;
+    margin: 0;
+  }
+
+  &.primary {
+    background: $primary-1;
+    border-radius: $border-radius;
+    color: $secondary;
+
+    &.active {
+      background: $secondary !important;
+      color: $primary !important;
+      transition: all 800ms;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: $primary-1;
+    }
+
+    &:not(&:disabled) {
+      &:hover {
+        background-color: $primary;
+        transition: background-color 150ms linear;
+      }
+    }
+  }
+
+  &.secondary {
+    background: $secondary;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+    color: $primary;
+
+    &.active {
+      background: $primary-1 !important;
+      color: $secondary !important;
+      transition: all 500ms;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: white;
+    }
+
+    &:not(&:disabled) {
+      &:hover {
+        background-color: $secondary-1 !important;
+        color: $primary-1 !important;
+        transition: background-color 150ms linear;
+      }
+    }
+  }
+}

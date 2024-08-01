@@ -1,0 +1,72 @@
+@import "../../../../@core/scss/mixins";
+@import "../../../../@core/scss/variables";
+
+.container {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  .patientDetailsCard {
+    grid-area: patientDetailsCard;
+  }
+
+  .mainInfosCard {
+    grid-area: mainInfosCard;
+  }
+
+  .dumEcoCard {
+    grid-area: dumEcoCard;
+  }
+
+  .problemsCard {
+    grid-area: problemsCard;
+  }
+
+  .mainInfosGraphCard {
+    grid-area: mainInfosGraphCard;
+  }
+
+  .mainInfosGraphCard2 {
+    grid-area: mainInfosGraphCard2;
+  }
+
+  .heatmapCard {
+    grid-area: heatmapCard;
+  }
+  
+  .carterinha {
+  }
+
+  .iconButton {
+    color: $primary;
+  }
+
+  grid-template-columns: 300px calc(100% - 330px);
+
+  &.gridTemplateAreas {
+    grid-template-areas:
+      "patientDetailsCard mainInfosCard"
+      "patientDetailsCard dumEcoCard"
+      "patientDetailsCard problemsCard"
+      "patientDetailsCard mainInfosGraphCard"
+      "patientDetailsCard mainInfosGraphCard2"
+      "patientDetailsCard heatmapCard";
+  }
+}
+
+@include sm {
+  .container {
+    grid-template-columns: 100%;
+
+    &.gridTemplateAreas {
+      grid-template-areas:
+        "patientDetailsCard"
+        "patientDetailsCard2"
+        "mainInfosCard"
+        "dumEcoCard"
+        "problemsCard"
+        "mainInfosGraphCard"
+        "heatmapCard" !important ;
+    }
+  }
+}

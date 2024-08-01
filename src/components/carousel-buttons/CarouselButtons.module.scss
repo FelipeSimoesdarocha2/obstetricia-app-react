@@ -1,0 +1,62 @@
+@import "../../@core/scss/variables";
+
+.container {
+  display: inline-flex;
+  gap: 12px;
+
+  .commandButtons {
+    width: 30px;
+    max-height: 25px;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  .items {
+    display: inline-flex;
+    max-width: 50vw;
+    height: 32px;
+    overflow: hidden;
+    gap: 12px;
+    scroll-behavior: smooth;
+
+    .button {
+      background: $secondary;
+      border-radius: 20px;
+      height: 32px;
+      min-width: 120px;
+      max-width: 150px;
+      display: inline-flex;
+      justify-content: space-between;
+
+      .buttonItem {
+        border: none;
+        padding: 6px 12px;
+        background-color: transparent;
+        font-weight: 600;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        text-align: left;
+        text-transform: none;
+        font-size: 12px;
+      }
+
+      .buttonNotClose {
+        border-top-right-radius: 40px !important;
+        border-bottom-right-radius: 40px !important;
+      }
+
+      .buttonClose {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        width: 27px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        svg {
+          width: 0.6em;
+        }
+      }
+    }
+  }
+}

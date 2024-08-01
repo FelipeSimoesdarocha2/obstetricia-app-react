@@ -1,0 +1,26 @@
+@import "../../@core/scss/variables";
+
+.checkbox {
+  display: flex;
+
+  input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    background-color: blue;
+
+    &:checked {
+      background-color: $primary;
+    }
+  }
+
+  span {
+    cursor: default;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 3px;
+    margin-left: 5px;
+    color: $primary;
+  }
+}

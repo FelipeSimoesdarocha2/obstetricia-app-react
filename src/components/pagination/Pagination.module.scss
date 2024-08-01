@@ -1,0 +1,23 @@
+@import "../../@core/scss/variables";
+
+.pagination {
+  display: inline-flex;
+  padding: 20px;
+
+  button {
+    margin: 3px;
+    min-width: 40px;
+    padding: 10px;
+    font-weight: 800;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &.active {
+      background-color: $primary;
+      color: white;
+      border-radius: 20px;
+    }
+  }
+}

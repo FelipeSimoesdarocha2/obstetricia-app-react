@@ -1,0 +1,77 @@
+@import "../../@core/scss/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  .status {
+    border-radius: 18px;
+    padding: 15px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+
+    .line {
+      width: 30px;
+      height: 3px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      display: block;
+      margin-top: 10px;
+    }
+
+    &.danger {
+      background-color: lighten($color: $danger, $amount: 25);
+
+      .line {
+        background-color: $danger;
+      }
+    }
+
+    &.normal {
+      background-color: lighten($color: $normal, $amount: 25);
+
+      .line {
+        background-color: $normal;
+      }
+    }
+
+    &.success {
+      background-color: lighten($color: $success, $amount: 25);
+
+      .line {
+        background-color: $success;
+      }
+    }
+
+    .value {
+      font-weight: bold;
+      font-size: 24px;
+      margin: 5px;
+    }
+  }
+
+  .statusTitle {
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+
+    &.danger {
+      color: $danger;
+    }
+
+    &.normal {
+      color: $normal;
+    }
+
+    &.success {
+      color: $success;
+    }
+  }
+}

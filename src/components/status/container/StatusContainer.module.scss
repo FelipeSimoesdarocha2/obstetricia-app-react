@@ -1,0 +1,43 @@
+@import "../../../@core/scss/variables";
+
+.container {
+  border-radius: 18px;
+  margin: 12px 0;
+  padding: 0 12px;
+
+  &.danger {
+    border: 1px solid lighten($color: $danger, $amount: 25);
+  }
+
+  &.normal {
+    border: 1px solid lighten($color: $normal, $amount: 25);
+  }
+
+  &.success {
+    border: 1px solid lighten($color: $success, $amount: 25);
+  }
+
+  .header {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    .span {
+      text-transform: none;
+      color: #1a535c;
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: auto;
+    }
+  }
+
+  .status {
+    display: inline-flex;
+    width: 100%;
+    gap: 3px;
+  }
+}

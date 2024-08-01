@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 260px;
+  }
+
+  li {
+    list-style: none;
+
+    .tag {
+      cursor: pointer;
+      display: block;
+      width: 165px;
+      margin: 0;
+    }
+  }
+}
+
+.btn {
+  padding: 10px !important;
+}

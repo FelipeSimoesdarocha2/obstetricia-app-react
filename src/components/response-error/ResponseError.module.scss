@@ -1,0 +1,15 @@
+@import "../../@core/scss/variables";
+
+.responseError {
+  font-size: 14px;
+  color: #f43f5e;
+  background: #fef5f7;
+  padding: 1rem;
+  border-radius: $border-radius;
+  font-family: sans-serif !important;
+  margin-top: 5px;
+  display: inline-flex;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+}

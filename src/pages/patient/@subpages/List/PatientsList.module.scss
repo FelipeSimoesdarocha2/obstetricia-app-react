@@ -1,0 +1,43 @@
+@import "../../../../@core/scss/variables";
+
+.container {
+  min-height: 83vh;
+}
+
+.patientImage {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .search {
+    max-width: 220px;
+    margin-left: 20px;
+
+    input {
+      padding: 0 !important;
+    }
+  }
+
+  .showFinalizadas {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+
+    .text {
+      color: $primary;
+      padding-right: 20px;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}

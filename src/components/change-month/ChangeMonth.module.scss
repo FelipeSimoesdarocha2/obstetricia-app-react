@@ -1,0 +1,51 @@
+@import "../../@core/scss/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btnSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .list {
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &.month {
+      margin-top: 310px;
+      margin-left: -50px;
+    }
+
+    &.year {
+      margin-top: 165px;
+      margin-left: 35px;
+    }
+
+    li {
+      &:hover {
+        cursor: pointer;
+        color: $primary-1;
+      }
+
+      &.active {
+        color: darken($color: $primary, $amount: 50);
+      }
+    }
+  }
+}

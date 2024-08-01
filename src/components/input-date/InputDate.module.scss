@@ -1,0 +1,7 @@
+.inputDate {
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0.2;
+    height: 18px;
+    width: 18px;
+  }
+}

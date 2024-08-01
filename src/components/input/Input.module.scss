@@ -1,0 +1,134 @@
+@import "../../@core/scss/variables";
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 100;
+  color: $primary-1;
+  margin: 10px;
+
+  .label {
+    display: flex;
+
+    svg {
+      font-size: 16px;
+    }
+  }
+
+  .input {
+    font-family: sans-serif !important;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    margin-top: 5px;
+    display: inline-flex;
+
+    &.required {
+      border: 1px solid $danger;
+    }
+
+    .icon {
+      margin-right: 5px;
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+
+    input,
+    textarea {
+      border: none;
+      width: 100%;
+      padding: 10px;
+      border-radius: $border-radius;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      resize: none;
+      margin: 5px;
+      font-family: sans-serif !important;
+    }
+
+    &:focus {
+      outline: 1px solid $primary;
+    }
+  }
+
+  .inputError {
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
+    margin-top: 2px;
+  }
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 100;
+  color: #1A535C;
+  margin: 10px;
+  background-color: white;
+
+  .label {
+    display: flex;
+
+    svg {
+      font-size: 16px;
+    }
+  }
+
+  .input {
+    font-family: sans-serif !important;
+    border-radius: $border-radius;
+    margin-top: 5px;
+    display: inline-flex;
+    background-color: white !important;
+    color: #1A535C;
+
+    &.required {
+      border: 1px solid $danger;
+    background-color: white !important;
+  }
+
+    .icon {
+      margin-right: 5px;
+      padding-top: 5px;
+      padding-left: 12px;
+    background-color: white !important;
+  }
+
+    input,
+    textarea {
+      border: none;
+      width: 100%;
+      padding: 10px;
+  color: #1A535C;
+  border-radius: $border-radius;
+      background-color: white !important;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      resize: none;
+      margin: 5px;
+      font-family: sans-serif !important;
+    }
+
+    &:focus {
+      outline: 1px solid $primary;
+    }
+  }
+
+  .inputError {
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
+    margin-top: 2px;
+  }
+}

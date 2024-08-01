@@ -1,0 +1,66 @@
+@import "variables";
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+  
+}
+
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin notebook {
+  @media (max-width: #{$screen-notebook-max}) {
+    @content;
+  }
+}
+
+@mixin notebook-xl {
+  @media (max-width: #{$screen-xl-notebook-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@media all {
+  .printElement1 {
+    display: none;
+  }
+}
+
+@media print {
+  html, body {
+    height: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .printElement1 {
+    display: block;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}
+
+
+
+
+@mixin borderBottomLinear {
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #f8fdff, #dfe1e2, #f8fdff);
+}

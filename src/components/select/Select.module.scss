@@ -1,0 +1,52 @@
+@import "../../@core/scss/variables";
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 100;
+  color: $primary-1;
+  margin: 10px;
+
+  .label {
+    display: flex;
+
+    svg {
+      font-size: 16px;
+    }
+  }
+
+  .select {
+    font-family: sans-serif !important;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    margin-top: 5px;
+    display: inline-flex;
+
+    &.required {
+      border: 1px solid $danger;
+    }
+
+    .icon {
+      margin-right: 5px;
+      padding-top: 5px;
+      padding-left: 12px;
+    }
+
+    select {
+      border: none;
+      width: 100%;
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: $border-radius;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &:focus {
+      outline: 1px solid $primary;
+    }
+  }
+}

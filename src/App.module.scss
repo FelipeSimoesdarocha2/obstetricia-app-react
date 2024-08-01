@@ -1,0 +1,34 @@
+@import "./@core/scss/mixins";
+
+.page {
+  display: flex;
+
+  .sidebar {
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  .container {
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@mixin sidebarAbsolute {
+  .page {
+    flex-direction: column;
+
+    .sidebar {
+      height: auto;
+    }
+  }
+}
+
+@include sm {
+  @include sidebarAbsolute;
+}
+
+@include md {
+  @include sidebarAbsolute;
+}

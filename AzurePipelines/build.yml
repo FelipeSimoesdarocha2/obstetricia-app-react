@@ -1,0 +1,43 @@
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+- main
+
+steps:
+- task: Npm@1
+  displayName: "install packages"
+  inputs:
+    command: "install"
+
+- task: Npm@1
+  displayName: "build"
+  inputs:
+    command: "custom"
+    customCommand: "run build"
+
+- task: Npm@1
+  displayName: "lint"
+  inputs:
+    command: "custom"
+    customCommand: "run lint"
+  condition: succeeded()
+
+- task: Npm@1
+  displayName: "test"
+  inputs:
+    command: "custom"
+    customCommand: "run test -- --watchAll=false"
+  condition: succeeded()
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/build'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: obstetricia-web
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')

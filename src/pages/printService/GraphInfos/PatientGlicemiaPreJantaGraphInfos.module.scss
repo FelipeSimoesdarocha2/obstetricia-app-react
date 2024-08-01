@@ -1,0 +1,10 @@
+@import "../../../../../../@core/scss/variables";
+
+.select {
+  border: none;
+  color: $primary;
+
+  &:focus {
+    outline: none;
+  }
+}

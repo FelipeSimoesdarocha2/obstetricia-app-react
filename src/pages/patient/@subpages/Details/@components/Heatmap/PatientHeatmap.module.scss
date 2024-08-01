@@ -1,0 +1,35 @@
+.container {
+  overflow-x: auto;
+  width: 100%;
+
+  td {
+    padding: 3px;
+
+    &.bold {
+      font-weight: bold;
+
+      .day {
+        width: 27px;
+        height: 27px;
+        text-align: center;
+      }
+    }
+
+    .rowValue {
+      background-color: #F4F4F5;
+      border: 1px solid #EBEBEB;
+      border-radius: 2px;
+      width: 25px;
+      height: 25px;
+
+      &.active {
+        background-color: #F43F5E;
+        border: 1px solid #F43F5E;
+      }
+    }
+  }
+
+  th:first-child {
+    padding-right: 15px;
+  }
+}

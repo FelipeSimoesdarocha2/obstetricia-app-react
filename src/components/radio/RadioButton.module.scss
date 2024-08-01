@@ -1,0 +1,13 @@
+@import "../../@core/scss/variables";
+
+.container {
+  border: none !important;
+
+  input[type="radio"] {
+    margin-right: 10px;
+    margin-top: 2px;
+    width: auto !important;
+    accent-color: $primary;
+    transform: scale(1.5);
+  }
+}

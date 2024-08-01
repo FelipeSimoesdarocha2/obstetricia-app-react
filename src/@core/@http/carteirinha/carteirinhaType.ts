@@ -1,0 +1,122 @@
+export type Consulta = {
+  gestationId: string;
+  gestation: null;
+  carteirinhaId: string;
+  carteirinha: null;
+  date: string;
+  idadeGestacional: string;
+  queixa: string;
+  hda: string;
+  medicacoes: string;
+  observacoes: string;
+  peso: number;
+  bcf: number;
+  pressaoArterial: string;
+  alturaUterina: number;
+  exameVaginal: string;
+  dinamicaUterina: string;
+  edema: number;
+  movimentacaoFetal: boolean;
+  destaque: boolean;
+  conduta: string;
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type ExameLaboratorial = {
+  gestationId: string;
+  carteirinhaId: string;
+  carteirinha: null;
+  examesLaboratoriaisTipo: number;
+  date: string;
+  resultado: string;
+  destaque: boolean;
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type ExameDeImagem = {
+  gestationId: string;
+  carteirinhaId: string;
+  carteirinha: null;
+  examesDeImagemTipo: number;
+  date: string;
+  resultado: string;
+  destaque: boolean;
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type HistoricoOutro = {
+  historicoCarteirinhaId: string;
+  historicoCarteirinha: null;
+  outro: string;
+  typeOutro: number;
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type Vacina = {
+  gestationId: string;
+  carteirinhaId: string;
+  carteirinha: null;
+  vacinaDoses: number;
+  vacinaTipos: number;
+  date: string;
+  imunizacao: number;
+  destaque: boolean;
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type CarteirinhaImprimir = {
+  carteirinhaId: string;
+  idGestation: string;
+  idPacient: string;
+  profilePictureName: null;
+  link: string;
+  imagemPaciente: null;
+  nomePaciente: string;
+  telefonePaciente: string;
+  emailPaciente: string;
+  obstetraPaciente: string;
+  convenioPaciente: string;
+  riscoPaciente: string;
+  firstEcoPaciente: string;
+  igEcoPaciente: null;
+  dppEcoPaciente: null;
+  dumPaciente: null;
+  igDumPaciente: null;
+  dppDumPaciente: null;
+  consultasDestaque: Consulta[];
+  examesLaboratoriaisDestaque: ExameLaboratorial[];
+  examesLaboratoriais: ExameLaboratorial[];
+  examesImagemDestaque: ExameDeImagem[];
+  examesImagem: ExameDeImagem[];
+  consultas: Consulta[];
+  historicoPessoal: string[];
+  historicoFamiliar: string[];
+  historicoObstetrico: string[];
+  historicoOutros: HistoricoOutro[];
+  vacinas: Vacina[];
+  vacinasDestaque: Vacina[];
+  informacoesBasicas: boolean;
+  consulta: boolean;
+  historicos: boolean;
+  vacina: boolean;
+  examesLaboratorial: boolean;
+  exameImagem: boolean;
+  graficosMonitoramento: boolean;
+  pressao: boolean;
+  peso: boolean;
+  alturaUlterina: boolean;
+  glicemias: boolean;
+  humor: boolean;
+  sintomas: boolean;
+  movFetal: boolean;
+};

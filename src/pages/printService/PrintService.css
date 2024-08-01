@@ -1,0 +1,196 @@
+@import "../../@core/scss/variables";
+@import "../../@core/scss/mixins";
+
+        .wrapper {
+            height: 100% !important;
+            width: 210mm;
+            overflow-y: auto;
+            margin-left: auto;
+            margin-right: auto;
+            .element {
+                display: block;
+            }
+            .containerHeader {
+                min-height: 130px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #ECF5DF;
+            }
+
+            .logo{
+                width: 219px;
+                height: 85px;
+                object-fit: contain;
+                margin-left: 20px;
+            }
+
+            .containerText {
+                flex-direction: column;
+                display: flex;
+                margin-right: 20px;
+                padding: 20px 0 20px 0;
+
+            }
+            .containerLine {
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .icon {
+                width: 18px;
+                height: 18px;
+                color: #1A535C;
+                object-fit: contain;
+            }
+            .site{
+                font-size: 12px;
+                font-weight: 300;
+                color: #27272A;
+                margin-left: 5px;
+            }
+            .siteBold{
+                font-size: 12px;
+                font-weight: bold;
+                color: #27272A;
+                margin-left: 5px;
+            }
+            .container{
+                width: 100%;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                .column{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 45px;
+                }
+
+            }
+            .containerPadding{
+                width: 100%;
+                display: flex;
+                padding-left: 20px;
+                padding-right: 20px;
+                .column{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 45px;
+                }
+
+            }
+            .width35{
+                width: 35px;
+            }
+
+            .spacer25{
+                height: 25px;
+                width: 25px;
+            }
+            .spacer50{
+                width: 50px;
+                height: 50px;
+            }
+            .spacer100{
+                width: 100px;
+                height: 100px;
+            }
+            .spacer8{
+                height: 8px;
+            }
+            .imageCenter {
+                width: 80px;
+            height: 80px;
+            border-radius: 40px;
+
+            }
+            .row {
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+                min-width: 220px;
+            }
+            .between {
+                width: 100%;
+            justify-content: space-between;
+            padding: 0 20px 0 20px;
+            }
+
+            .textBold{
+                color:  #27272A;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .text{
+                color:  #27272A;
+                font-size: 12px;
+                font-weight: 300;
+                object-fit: contain;
+            }
+
+            .line {
+                width: 100%;
+                height: 1px;
+                margin-top: 5px;
+                @include borderBottomLinear;
+            }
+
+            .containerCollumn {
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container33{
+                width: 33.33%;
+            }
+            .container33Padding{
+                width: 33.33%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .container10{
+                width: calc(100% / 9);
+            }
+            .container33Padding{
+                width: 33.33%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+
+
+            .title {
+                color: #27272A;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+            }
+            .description {
+                color: #27272A;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .titleRow {
+                color: #27272A;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .containerHistorico {
+                display: flex;
+                padding: 6px 12px 6px 12px;
+                background-color: #EAF2F4;
+                border-radius: 18px;
+                margin-right: 5px;
+                box-shadow: 0px 1px 0px 0px rgba(26, 83, 92, 0.28);
+            }
+            .textHistorico {
+                color: #1A535C;
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }

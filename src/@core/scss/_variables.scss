@@ -1,0 +1,21 @@
+$screen-sm-max: 560px;
+$screen-md-max: 1100px;
+$screen-notebook-max: 1400px;
+$screen-xl-notebook-min: 1401px;
+$screen-xl-min: 1101px;
+
+$primary: #1A535C;
+$primary-1: #3E6C75;
+
+$secondary: #EAF2F4;
+$secondary-1: rgba(62, 108, 117, 0.2);
+
+$danger: #E32020;
+
+$border-color: lighten($primary-1, 10%);
+$border-radius: 40px;
+$border-radius-textarea: 20px;
+
+$danger: #EB76BC;
+$normal: #7682EB;
+$success: #58B9BF;
